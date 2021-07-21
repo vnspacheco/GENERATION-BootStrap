@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS - Pacheco</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <style>
+        .tm-img {
+            width: 50x;
+            height: 50px;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="https://images.fmctraining.com/images/aws-logo-white.png" alt="" width="70" height="auto">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Página inicial</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Aprenda
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://aws.amazon.com/pt/what-is-aws/?nc2=h_ql_le_int"
+                                    target="_blank">Introdução à AWS</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://aws.amazon.com/pt/getting-started/?nc2=h_ql_le_gs"
+                                    target="_blank">Conceitos básicos da AWS</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="https://aws.amazon.com/pt/training/?nc2=h_ql_le_tc"
+                                    target="_blank">Treinamento e certificação</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contato.html">Contato</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button type="button" class="btn btn-warning">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- /MENU -->
+
+    <!-- FORMULÁRIO -->
+    <h1 class="text-center pt-4">Fale conosco</h1>
+
+    <div class="col-md-8 container ">
+        <div class="d-flex flex-column bd-highlight mb-3">
+            <div class="p-2 bd-highlight">
+                <form>
+                    <div class="form-group pb-3">
+                        <label for="exampleFormControlInput1 mb-3">Email</label>
+                        <input type="email" class="form-control email" id="exampleFormControlInput1"
+                            placeholder="name@example.com" onkeyup="validaEmail()">
+                        <div id="txtEmail"></div>
+                    </div>
+                    <div class="form-group pb-3">
+                        <label for="exampleFormControlSelect1">Assunto</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Dúvida</option>
+                            <option>Sugestão</option>
+                            <option>Reclamação</option>
+                        </select>
+                    </div>
+                    <div class="form-group pb-3">
+                        <label for="exampleFormControlTextarea1">Texto/Descrição</label>
+                        <textarea class="form-control texto" id="exampleFormControlTextarea1" rows="3"
+                            onkeyup="validaTexto()"></textarea>
+                        <div id="txtTexto"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="p-2 bd-highlight align-self-center">
+                <button onclick="enviar()" type="button" class="btn btn-outline-success">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <!-- /FORMULÁRIO -->
+
+    <hr>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <a href="https://www.linkedin.com/in/vinicius-pacheco/" target="_blank">
+                    <img class="tm-img p-1" src="/assets/img/logotipo-do-linkedin.png" alt="Linkedin">
+                </a>
+                <a href="https://github.com/vnspacheco" target="_blank">
+                    <img class="tm-img p-1" src="/assets/img/github.png" alt="GitHub">
+                </a>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center">Todos direitos reservados: Vinicius Pacheco &copy</p>
+            </div>
+        </div>
+    </footer>
+    <!-- RODAPÉ -->
+
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
